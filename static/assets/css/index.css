@@ -1,0 +1,109 @@
+/* ==========================================================================
+
+Author: mTheme
+Author URI: http://themeforest.net/user/mtheme_market
+Version: 1.0
+
+
+Content Tabel
++---------------+
+
+* body
+	+ Header / #header
+	+ Main Content / #main-content
+	+ Footer / #footer
+
+========================================================================== */
+
+html, body{
+	height: 100%;
+}
+#wrap{
+	margin-bottom: 56px;
+	min-height: 100%;
+}
+img{
+	max-width: 100%;
+}
+p{
+	margin: 0;
+}
+.header{
+	background-image: url('../../images/about/about.jpg');
+	background-position: top center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: auto 100%; 
+	background-size: 100% auto;
+    padding: 50px 0;
+    text-align: center;
+}
+article{
+	padding: 25px 0;
+}
+article a{
+	border-bottom: 3px solid #e27900;
+	background-color: #fafafa;
+    display: inline-block;
+    height: 350px;
+    position: relative;
+    text-indent: -9999px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 100% auto;
+    background-image: url('../../images/screenshots/style_v1.jpg');
+    
+    -webkit-transition: all 3.5s;
+    transition: all 3.5s;
+    outline: none !important;
+}
+article.style-v3 a{
+	background-image: url('../../images/screenshots/style_v3.jpg');
+}
+article.style-v2 a{
+	background-image: url('../../images/screenshots/style_v2.jpg');
+}
+article a:hover{
+	background-position: center 100%;
+}
+h3{
+	text-align: center;
+	text-transform: uppercase;
+	color: #000;
+}
+#footer{
+	height: 56px;
+	margin-top: 56px;
+}
+.copyright{
+	line-height: 56px;
+	font-size: 14px;
+	text-align: center;
+	border-top: 1px solid;
+	
+}
+@media screen and (max-width: 1920px) {
+	article a{
+		height: 550px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.header{
+		padding: 10px 0;
+	}
+	article a{
+		height: 250px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.logo img{
+		width: 120px;
+	}
+	article {
+	    padding: 15px 0 0;
+	}
+	article a{
+		height: 200px;
+	}
+}
